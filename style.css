@@ -1,0 +1,165 @@
+html{
+    /* background-color: black; change this to moving space background later */
+    background-color: #ECCBD0;
+}
+
+h1{
+    font-size: 50px;
+    color: black;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    font-family: "Merienda", cursive;
+}
+
+
+
+/* nav{
+
+} */
+
+#clearbutton{
+  display: block;
+  color: #c39db3;
+  background-color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px; 
+  margin-left: auto;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+#randombutton{
+  display: block;
+  color: #c39db3;
+  background-color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px; 
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  
+}
+
+button:hover,
+button:active {
+  color: black;
+  background-color: #c39db3;
+  opacity: 0.85;
+}
+
+main{
+  display: flex; /*horizontal*/
+  gap: 150px;
+}
+
+p{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Merienda", cursive;
+}
+
+.categories p{
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+
+#stagecontainer{
+    /* background-color: #d3d3d395; */
+    background-color: #958E9E;
+    height: 600px;
+    width: 600px;   
+    position: relative;
+}
+
+#bigstagecontainer{
+  margin-left: 50px;
+}
+
+
+.dropdown { /*whole class including the actual button */
+    position: relative;
+
+  }
+  
+
+  .dropbutton {
+    background-color: #c39db3;
+    color: #333;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    margin-bottom: 3px;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    border: none;
+    cursor: pointer;
+    width: 160px;
+    border-radius: 4px;
+    
+  }
+  
+
+  .dropdown-content { /*  effects WHOLE container element that holds all the content of the dropdown menu */
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    grid-template-columns: auto auto auto auto auto; /*Three columns with equal width */
+    grid-gap: 10px;  /*Adjust as needed */
+  }
+  
+
+  .dropdown-content a { /* effects the anchor (<a>) elements WITHIN the dropdown menu */
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;  /*for grid */
+    width: 150px;
+  }
+  
+
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+
+  .show {
+    display: grid; /* when items are showing, THEN we want to have the grid display */
+  }
+
+
+  .clotheitem{ /*size of clothe item image*/
+    width: 150px;
+  }
+
+  .shoes{ /*size of shoes image, smaller than the clothes*/
+    width: 85px;
+  }
+
+
+#stagecontainer .clotheitem {
+  position: absolute;
+}
+
+#lastbutton{
+  margin-bottom: 20px;
+}
